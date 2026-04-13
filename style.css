@@ -11,7 +11,7 @@ h1 {
 }
 
 p {
-    font-size: 25px;
+    font-size: 20px;
     text-align: center;
 }
 
@@ -21,7 +21,7 @@ a {
 }
 
 
-main {
+.grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 10px;
@@ -29,32 +29,29 @@ main {
     margin: auto;
 }
 
-
-div {
+figure {
     border: 2px solid black;
     padding: 5px;
 }
 
-
-div img {
+figure img {
     width: 100%;
     height: auto;
     display: block;
 }
 
 
-
 @media (min-width: 772px) {
 
-    main {
+    .grid {
         grid-template-columns: 1fr 1fr;
     }
 
-    div {
+    figure {
         border-radius: 50%;
     }
 
-    div:last-child {
+    figure:last-child {
         grid-column: span 2;
     }
 }
@@ -63,11 +60,11 @@ div img {
 
 @media (min-width: 992px) {
 
-    div:nth-child(3n) {
+    figure:nth-child(3n) {
         grid-column: span 2;
     }
 
-    div {
+    figure {
         border-radius: 0;
     }
 }
@@ -81,16 +78,15 @@ div img {
 }
 
 
-
 @media (prefers-color-scheme: dark) {
 
     body {
         background-color: #111;
     }
 
-    div {
+    figure {
         background-color: #222;
-        color: #f5e663; /* vàng nhạt */
+        color: #f5e663;
         border-color: black;
     }
 
