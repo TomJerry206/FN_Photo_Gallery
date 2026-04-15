@@ -41,6 +41,15 @@ figure img {
     display: block;
 }
 
+figcaption {
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+figure:hover {
+    transform: scale(1.05);
+}
+
 
 @media (min-width: 772px) {
 
